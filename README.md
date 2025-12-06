@@ -1,7 +1,7 @@
 <div align="center">
   <!-- <h1><b> TimeCMA </b></h1> -->
   <!-- <h2><b> Time-CMA </b></h2> -->
-  <h2><b> (AAAI'26) (In Submission) T3Time: Tri-Modal Time Series Forecasting via Adaptive Multi-Head Alignment and Residual Fusion </b></h2>
+  <h2><b> (AAAI'26) (Poster) T3Time: Tri-Modal Time Series Forecasting via Adaptive Multi-Head Alignment and Residual Fusion </b></h2>
 </div>
 
 [![](http://img.shields.io/badge/cs.LG-arXiv%3A2406.01638-B31B1B.svg)](https://www.arxiv.org/abs/2508.04251)
@@ -56,4 +56,5 @@ bash {data_name}.sh
 
 ## Contact Us
 For inquiries or further assistance, contact us at [monafabdul15@gmail.com](mailto:monafabdul15@gmail.com) or open an issue on this repository.
+
 
