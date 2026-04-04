@@ -1,0 +1,14 @@
+1. pred_length = 96
+PYTHONPATH=. python train.py \
+  --data_path ETTm1 \
+  --batch_size 64 \
+  --num_nodes 7 \
+  --seq_len 96 \
+  --pred_len 96 \
+  --epochs 150 \
+  --seed 2024 \
+  --channel 128 \
+  --learning_rate 1e-4 \
+  --dropout_n 0.5 \
+  --e_layer 1 \
+  --d_layer 2

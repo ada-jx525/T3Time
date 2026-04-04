@@ -18,7 +18,7 @@ def parse_args():
     parser.add_argument("--batch_size", type=int, default=1)
     parser.add_argument("--d_model", type=int, default=768)
     parser.add_argument("--l_layers", type=int, default=12)
-    parser.add_argument("--model_name", type=str, default="gpt2")
+    parser.add_argument("--model_name", type=str, default="/root/autodl-fs/gpt2_local")
     parser.add_argument("--divide", type=str, default="train")
     parser.add_argument("--num_workers", type=int, default=min(10, os.cpu_count()))
     return parser.parse_args()

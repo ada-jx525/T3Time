@@ -6,7 +6,7 @@ class GenPromptEmb(nn.Module):
     def __init__(
         self,
         data_path = 'FRED',
-        model_name = "gpt2",
+        model_name = "/root/autodl-fs/gpt2_local",
         device = 'cuda:0',
         input_len = 96,
         d_model = 768,
