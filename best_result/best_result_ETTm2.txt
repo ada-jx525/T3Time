@@ -1,0 +1,15 @@
+1. pred_length = 96
+No update
+Epoch: 075, Training Time: 84.5517 secs
+Epoch: 075, Validation Time: 7.3057 secs
+-----------------------
+Epoch: 075, Train Loss: 0.1887, Train MAE: 0.2475 
+Epoch: 075, Valid Loss: 0.1241, Valid MAE: 0.2399
+No update
+Average Training Time: 82.3822 secs/epoch
+Average Validation Time: 7.2553 secs
+Training ends
+The epoch of the best result： 28
+The valid loss of the best model 0.1236
+On average horizons, Test MSE: 0.1728, Test MAE: 0.2544
+Total time spent: 6848.3158
