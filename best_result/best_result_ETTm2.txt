@@ -73,3 +73,19 @@ The epoch of the best result： 53
 The valid loss of the best model 0.217
 On average horizons, Test MSE: 0.3080, Test MAE: 0.3405
 Total time spent: 7381.2315
+
+4. pred_length = 720
+No update
+Epoch: 075, Training Time: 93.1563 secs
+Epoch: 075, Validation Time: 9.7685 secs
+-----------------------
+Epoch: 075, Train Loss: 0.5313, Train MAE: 0.4115 
+Epoch: 075, Valid Loss: 0.2905, Valid MAE: 0.3714
+No update
+Average Training Time: 87.8476 secs/epoch
+Average Validation Time: 8.5318 secs
+Training ends
+The epoch of the best result： 27
+The valid loss of the best model 0.2892
+On average horizons, Test MSE: 0.3998, Test MAE: 0.3990
+Total time spent: 7353.1090

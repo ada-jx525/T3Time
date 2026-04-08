@@ -1,0 +1,118 @@
+1. pred_length = 96
+PYTHONPATH=. python train.py \
+  --data_path Weather \
+  --batch_size 32 \
+  --num_nodes 21 \
+  --seq_len 96 \
+  --pred_len 96 \
+  --epochs 20 \
+  --seed 2024 \
+  --channel 64 \
+  --learning_rate 1e-3 \
+  --dropout_n 0.1 \
+  --e_layer 6 \
+  --d_layer 2
+No update
+Epoch: 020, Training Time: 101.7141 secs
+Epoch: 020, Validation Time: 5.0964 secs
+-----------------------
+Epoch: 020, Train Loss: 0.3554, Train MAE: 0.2581 
+Epoch: 020, Valid Loss: 0.4027, Valid MAE: 0.2727
+###Update tasks appear###
+On average horizons, Test MSE: 0.1641, Test MAE: 0.2115
+No update
+Average Training Time: 101.9565 secs/epoch
+Average Validation Time: 5.0768 secs
+Training ends
+The epoch of the best result： 17
+The valid loss of the best model 0.4027
+On average horizons, Test MSE: 0.1636, Test MAE: 0.2107
+Total time spent: 2192.1855
+
+2. pred_length = 192
+PYTHONPATH=. python train.py \
+  --data_path Weather \
+  --batch_size 32 \
+  --num_nodes 21 \
+  --seq_len 96 \
+  --pred_len 192 \
+  --epochs 150 \
+  --seed 2024 \
+  --channel 32 \
+  --learning_rate 1e-4 \
+  --dropout_n 0.1 \
+  --e_layer 1 \
+  --d_layer 2
+No update
+Epoch: 090, Training Time: 66.9903 secs
+Epoch: 090, Validation Time: 3.6561 secs
+-----------------------
+Epoch: 090, Train Loss: 0.4431, Train MAE: 0.3250 
+Epoch: 090, Valid Loss: 0.4827, Valid MAE: 0.3244
+No update
+Average Training Time: 66.5627 secs/epoch
+Average Validation Time: 3.7062 secs
+Training ends
+The epoch of the best result： 65
+The valid loss of the best model 0.4717
+On average horizons, Test MSE: 0.2112, Test MAE: 0.2535
+Total time spent: 6487.4050
+
+3. pred_length = 336
+PYTHONPATH=. python train.py \
+  --data_path Weather \
+  --batch_size 32 \
+  --num_nodes 21 \
+  --seq_len 96 \
+  --pred_len 336 \
+  --epochs 150 \
+  --seed 2024 \
+  --channel 64 \
+  --head 8 \
+  --learning_rate 1e-4 \
+  --dropout_n 0.5 \
+  --e_layer 1 \
+  --d_layer 6
+No update
+Epoch: 078, Training Time: 90.9770 secs
+Epoch: 078, Validation Time: 4.6014 secs
+-----------------------
+Epoch: 078, Train Loss: 0.5312, Train MAE: 0.3850 
+Epoch: 078, Valid Loss: 0.5663, Valid MAE: 0.3822
+No update
+Average Training Time: 87.9581 secs/epoch
+Average Validation Time: 4.0803 secs
+Training ends
+The epoch of the best result： 53
+The valid loss of the best model 0.5624
+On average horizons, Test MSE: 0.2669, Test MAE: 0.2943
+Total time spent: 7452.4746
+
+4. pred_length = 720
+PYTHONPATH=. python train.py \
+  --data_path Weather \
+  --batch_size 64 \
+  --num_nodes 21 \
+  --seq_len 96 \
+  --pred_len 720 \
+  --epochs 150 \
+  --seed 2024 \
+  --channel 128 \
+  --learning_rate 1e-4 \
+  --dropout_n 0.25 \
+  --e_layer 1 \
+  --d_layer 1
+No update
+Epoch: 107, Training Time: 40.9736 secs
+Epoch: 107, Validation Time: 2.7530 secs
+-----------------------
+Epoch: 107, Train Loss: 0.5425, Train MAE: 0.4000 
+Epoch: 107, Valid Loss: 0.6692, Valid MAE: 0.4566
+No update
+Average Training Time: 53.5055 secs/epoch
+Average Validation Time: 3.3292 secs
+Training ends
+The epoch of the best result： 82
+The valid loss of the best model 0.6629
+On average horizons, Test MSE: 0.3357, Test MAE: 0.3473
+Total time spent: 6374.7317

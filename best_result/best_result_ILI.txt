@@ -1,0 +1,119 @@
+1. pred_length = 24
+PYTHONPATH=. python train.py \
+  --data_path ILI \
+  --batch_size 16 \
+  --num_nodes 7 \
+  --seq_len 36 \
+  --pred_len 24 \
+  --epochs 100 \
+  --seed 6666 \
+  --channel 32 \
+  --learning_rate 1e-4 \
+  --dropout_n 0.1 \
+  --e_layer 1 \
+  --d_layer 1 \
+  --num_workers 10 \
+  --d_llm 768
+No update
+Epoch: 090, Training Time: 1.8751 secs
+Epoch: 090, Validation Time: 0.4358 secs
+-----------------------
+Epoch: 090, Train Loss: 0.3973, Train MAE: 0.3958 
+Epoch: 090, Valid Loss: 0.2662, Valid MAE: 0.3557
+No update
+Average Training Time: 1.8844 secs/epoch
+Average Validation Time: 0.4323 secs
+Training ends
+The epoch of the best result： 65
+The valid loss of the best model 0.2275
+On average horizons, Test MSE: 1.
+
+
+2. pred_length = 36
+PYTHONPATH=. python train.py \
+  --data_path ILI \
+  --batch_size 16 \
+  --num_nodes 7 \
+  --seq_len 36 \
+  --pred_len 36 \
+  --epochs 150 \
+  --seed 6666 \
+  --channel 64 \
+  --learning_rate 1e-4 \
+  --dropout_n 0.1 \
+  --e_layer 1 \
+  --d_layer 1
+No update
+Epoch: 075, Training Time: 1.8609 secs
+Epoch: 075, Validation Time: 0.4510 secs
+-----------------------
+Epoch: 075, Train Loss: 0.4163, Train MAE: 0.3923 
+Epoch: 075, Valid Loss: 0.2040, Valid MAE: 0.3151
+No update
+Average Training Time: 1.8961 secs/epoch
+Average Validation Time: 0.4578 secs
+Training ends
+The epoch of the best result： 32
+The valid loss of the best model 0.1932
+On average horizons, Test MSE: 1.6076, Test MAE: 0.8210
+Total time spent: 192.3799
+
+3. pred_length = 48
+PYTHONPATH=. python train.py \
+  --data_path ILI \
+  --batch_size 32 \
+  --num_nodes 7 \
+  --seq_len 36 \
+  --pred_len 48 \
+  --epochs 150 \
+  --seed 8888 \
+  --channel 128 \
+  --learning_rate 2.5e-3 \
+  --dropout_n 0.5 \
+  --e_layer 1 \
+  --d_layer 1
+No update
+Epoch: 075, Training Time: 1.1354 secs
+Epoch: 075, Validation Time: 0.3891 secs
+-----------------------
+Epoch: 075, Train Loss: 0.3628, Train MAE: 0.3647 
+Epoch: 075, Valid Loss: 0.3615, Valid MAE: 0.3876
+No update
+Average Training Time: 1.1535 secs/epoch
+Average Validation Time: 0.3831 secs
+Training ends
+The epoch of the best result： 27
+The valid loss of the best model 0.182
+On average horizons, Test MSE: 1.7785, Test MAE: 0.8531
+Total time spent: 122.8673
+
+4. pred_length = 60
+PYTHONPATH=. python train.py \
+  --data_path ILI \
+  --batch_size 32 \
+  --num_nodes 7 \
+  --seq_len 36 \
+  --pred_len 60 \
+  --epochs 150 \
+  --seed 6666 \
+  --channel 64 \
+  --learning_rate 1e-4 \
+  --dropout_n 0.1 \
+  --e_layer 1 \
+  --d_layer 1
+No update
+Epoch: 091, Training Time: 1.0602 secs
+Epoch: 091, Validation Time: 0.4327 secs
+-----------------------
+Epoch: 091, Train Loss: 0.4893, Train MAE: 0.4233 
+Epoch: 091, Valid Loss: 0.2506, Valid MAE: 0.3368
+###Update tasks appear###
+On average horizons, Test MSE: 1.9255, Test MAE: 0.9101
+No update
+Average Training Time: 1.1459 secs/epoch
+Average Validation Time: 0.4266 secs
+Training ends
+The epoch of the best result： 66
+The valid loss of the best model 0.2679
+On average horizons, Test MSE: 1.9180, Test MAE: 0.8999
+Total time spent: 191.7855
